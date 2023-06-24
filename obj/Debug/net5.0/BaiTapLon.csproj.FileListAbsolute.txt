@@ -1,0 +1,100 @@
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\appsettings.Development.json
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\appsettings.json
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\BaiTapLon.exe
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\BaiTapLon.deps.json
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\BaiTapLon.runtimeconfig.json
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\BaiTapLon.runtimeconfig.dev.json
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\BaiTapLon.dll
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\ref\BaiTapLon.dll
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\BaiTapLon.pdb
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Microsoft.OpenApi.dll
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\System.Data.SqlClient.dll
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\Web API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.GeneratedMSBuildEditorConfig.editorconfig
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.AssemblyInfoInputs.cache
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.AssemblyInfo.cs
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.csproj.CoreCompileInputs.cache
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.MvcApplicationPartsAssemblyInfo.cs
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.MvcApplicationPartsAssemblyInfo.cache
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\staticwebassets\BaiTapLon.StaticWebAssets.Manifest.cache
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\staticwebassets\BaiTapLon.StaticWebAssets.xml
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\scopedcss\bundle\BaiTapLon.styles.css
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.RazorTargetAssemblyInfo.cache
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.csproj.CopyComplete
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.dll
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\ref\BaiTapLon.dll
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.pdb
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.genruntimeconfig.cache
+F:\Web API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.csproj.AssemblyReference.cache
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\appsettings.Development.json
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\appsettings.json
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\BaiTapLon.StaticWebAssets.xml
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\BaiTapLon.exe
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\BaiTapLon.deps.json
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\BaiTapLon.runtimeconfig.json
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\BaiTapLon.runtimeconfig.dev.json
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\BaiTapLon.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\BaiTapLon.pdb
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.csproj.AssemblyReference.cache
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.GeneratedMSBuildEditorConfig.editorconfig
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.AssemblyInfoInputs.cache
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.AssemblyInfo.cs
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.csproj.CoreCompileInputs.cache
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.MvcApplicationPartsAssemblyInfo.cs
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.MvcApplicationPartsAssemblyInfo.cache
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\scopedcss\bundle\BaiTapLon.styles.css
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\staticwebassets\BaiTapLon.StaticWebAssets.Manifest.cache
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.RazorTargetAssemblyInfo.cache
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.csproj.CopyComplete
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.dll
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\refint\BaiTapLon.dll
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.pdb
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\BaiTapLon.genruntimeconfig.cache
+D:\API\BaiTapLon\BaiTapLon\obj\Debug\net5.0\ref\BaiTapLon.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\API\BaiTapLon\BaiTapLon\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
