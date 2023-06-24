@@ -6,13 +6,11 @@ TenLoai nvarchar(200) NOT NULL,
 Anh nvarchar(500) ,
 )
 insert into LoaiSP(TenLoai,Anh)
-values(N'Bánh Kem','kemcanhhoa.jpg')
+values(N'Giày Converse','kemcanhhoa.jpg')
 insert into LoaiSP(TenLoai,Anh)
-values(N'Bánh M?n','BEEFBBQPIZZA.jpg')
+values(N'Giày Vans','BEEFBBQPIZZA.jpg')
 insert into LoaiSP(TenLoai,Anh)
-values(N'Bánh Mousse','mousechanh2.jpg')
-insert into LoaiSP(TenLoai,Anh)
-values(N'Bánh Ng?t','crepe.jpg')
+values(N'Giày Nike','mousechanh2.jpg')
 --SP
 create proc SP_LoaiSP
 @id int,
@@ -54,6 +52,7 @@ Delete from LoaiSP where id=@id
 end
 end
 
+--Sản phẩm
 create table SanPham(
 id INT IDENTITY(1,1) primary key ,
 MaLoai int foreign key references LoaiSP(id) on delete cascade on update cascade NOT NULL,
@@ -65,7 +64,9 @@ TinhTrang nvarchar(50),
 Anh text,
 )
 insert into SanPham(MaLoai,TenSP,GiaBan,Sale,SoLuong,TinhTrang,Anh)
-values('1',N'Sản phẩm 1',500000,450000,10,N'Giảm giá','giay1.jpg')
+values('1',N'giày converse all star',500000,450000,10,N'Gi?m giá','kembo.jpg')
+insert into SanPham(MaLoai,TenSP,GiaBan,Sale,SoLuong,TinhTrang,Anh)
+values('2',N'giày vans old skool',500000,450000,6,N'Gi?m giá','banhkemdautay.jpg')
 
 alter proc SP_SanPham
 @id int,
@@ -76,6 +77,7 @@ alter proc SP_SanPham
 @SoLuong int,
 @TinhTrang nvarchar(50),
 @Anh text,
+@MoTa nvarchar(300),
 @type nvarchar(200)
 as 
 begin
@@ -89,7 +91,8 @@ GiaBan,
 Sale,
 SoLuong,
 TinhTrang,
-Anh
+Anh,
+MoTa
 )
 values(
 @MaLoai ,
@@ -98,8 +101,8 @@ values(
 @Sale ,
 @SoLuong ,
 @TinhTrang,
-@Anh 
-
+@Anh,
+@MoTa
 )
 end 
 else if(@type='get')
@@ -119,7 +122,8 @@ GiaBan=@GiaBan,
 Sale=@Sale,
 SoLuong=@SoLuong,
 TinhTrang=@TinhTrang,
-Anh=@Anh
+Anh=@Anh,
+MoTa=@MoTa
 where id=@id
 end 
 else if(@type='delete')
@@ -212,25 +216,25 @@ end
 
 CREATE TABLE NhanVien (
 id INT IDENTITY(1,1) primary key ,
-TenNV nvarchar(500)  NULL,
-GT nvarchar(500)  NULL,
-NgaySinh datetime NULL,
+TenNV nvarchar(200) not NULL,
+GT nvarchar(50)  NULL,
+NgaySinh nvarchar(200) NULL,
 QueQuan nvarchar(100)   NULL,
-SDT nvarchar(20)   NULL,
-Email nvarchar(500)  NULL,
-capbac nvarchar(10)   NULL,
+SDT nvarchar(10)   NULL,
+Email nvarchar(300)  NULL,
+capbac nvarchar(200)   NULL,
 ) 
-drop
+--drop
 create proc SP_NhanVien
 @id int,
-@TenNV nvarchar(500),
-@GT nvarchar(500),
-@NgaySinh datetime  NULL,
+@TenNV nvarchar(200),
+@GT nvarchar(50),
+@NgaySinh nvarchar(200),
 @QueQuan nvarchar(100),
-@SDT nvarchar(20),
-@Email nvarchar(500),
-@capbac nvarchar(500),
-@type nvarchar(10)
+@SDT nvarchar(10),
+@Email nvarchar(300),
+@capbac nvarchar(200),
+@type nvarchar(200)
 as 
 begin
 If(@type='insert')
@@ -283,6 +287,7 @@ Delete from NhanVien where id=@id
 end
 end
 
+--accadmin
 create table AccAdmin(
 id INT IDENTITY(1,1) not null primary key,
 HoTen nvarchar(500) null ,
@@ -356,7 +361,7 @@ end
 end
 
 
-
+--giohang
 CREATE TABLE GioHang(
 id INT IDENTITY(1,1) primary key ,
 tenSP nvarchar(200) not null,
@@ -480,7 +485,7 @@ id INT IDENTITY(1,1) primary key ,
 tieuDe nvarchar(200) not null,
 noiDung1 nvarchar(300),
 noiDung2 nvarchar(300),
-ngayTao datetime,
+ngayTao nvarchar(200),
 anh nvarchar(100),
 anh2 nvarchar(100),
 )
@@ -491,7 +496,7 @@ create proc SP_TinTuc
 @tieuDe nvarchar(200),
 @noiDung1 nvarchar(300),
 @noiDung2 nvarchar(300),
-@ngayTao datetime,
+@ngayTao nvarchar(200),
 @anh nvarchar(100),
 @anh2 nvarchar(100),
 @type nvarchar(200)
@@ -541,3 +546,240 @@ begin
 Delete from TinTuc where id=@id
 end
 end
+
+--nhà cung cấp
+
+
+create proc SP_NhaCungCap
+@id int,
+@TenNCC nvarchar(200),
+@DiaChi nvarchar(200),
+@SDT nvarchar(10),
+@Email nvarchar(200),
+@type nvarchar(200)
+as 
+begin
+If(@type='insert')
+begin
+Insert into NhaCungCap
+(
+TenNCC,
+DiaChi,
+SDT,
+Email
+)
+values(
+@TenNCC,
+@DiaChi,
+@SDT,
+@Email
+)
+end 
+else if(@type='get')
+begin
+select * from NhaCungCap order by id desc
+end
+else if(@type='getid')
+begin
+select * from NhaCungCap where id=@id
+end
+else If(@type='update')
+begin
+update NhaCungCap set
+TenNCC=@TenNCC,
+DiaChi=@DiaChi,
+SDT=@SDT,
+Email=@Email
+where id=@id
+end 
+else if(@type='delete')
+begin
+Delete from NhaCungCap where id=@id
+end
+end
+
+
+--user
+create proc SP_NguoiDung
+@id int,
+@tk nvarchar(500),
+@mk nvarchar(500),
+@type nvarchar(200)
+as 
+begin
+If(@type='insert')
+begin
+Insert into NguoiDung
+(
+tk,
+mk
+)
+values(
+@tk,
+@mk
+)
+end 
+else if(@type='get')
+begin
+select * from NguoiDung order by id desc
+end
+else if(@type='getid')
+begin
+select * from NguoiDung where id=@id
+end
+else If(@type='update')
+begin
+update NguoiDung set
+tk=@tk,
+mk=@mk
+where id=@id
+end 
+else if(@type='delete')
+begin
+Delete from NguoiDung where id=@id
+end
+end
+
+
+--hoadonban
+create proc SP_HoaDonBan
+@MaHDB int,
+@NgayBan datetime,
+@id_kh int,
+@type nvarchar(200)
+as 
+begin
+If(@type='insert')
+begin
+Insert into HoaDonBan
+(
+NgayBan,
+id_kh
+)
+values(
+@NgayBan,
+@id_kh
+)
+end 
+else if(@type='get')
+begin
+select * from HoaDonBan order by MaHDB desc
+end
+else if(@type='getid')
+begin
+select * from HoaDonBan where MaHDB=@MaHDB
+end
+else If(@type='update')
+begin
+update HoaDonBan set
+NgayBan=@NgayBan,
+id_kh=@id_kh
+where MaHDB=@MaHDB
+end 
+else if(@type='delete')
+begin
+Delete from HoaDonBan where MaHDB=@MaHDB
+end
+end
+
+--chitiet hdb
+
+create proc SP_CTHDB
+@id_cthdb int,
+@id_hdb int,
+@id_sp int,
+@tenSP nvarchar(500),
+@giaBan int,
+@soLuong int,
+@thanhTien int,
+@anh nvarchar(300),
+@size nvarchar(300),
+@type nvarchar(200)
+as 
+begin
+If(@type='insert')
+begin
+Insert into CTHDB
+(
+id_hdb,
+id_sp,
+tenSP,
+giaBan,
+soLuong,
+thanhTien,
+anh,
+size
+)
+values(
+@id_hdb,
+@id_sp,
+@tenSP,
+@giaBan,
+@soLuong,
+@thanhTien,
+@anh,
+@size
+)
+end 
+else if(@type='get')
+begin
+select * from CTHDB order by id_cthdb desc
+end
+else if(@type='getid')
+begin
+select * from CTHDB where id_cthdb=@id_cthdb
+end
+else If(@type='update')
+begin
+update CTHDB set
+id_hdb=@id_hdb,
+id_sp=@id_sp,
+tenSP=@tenSP,
+giaBan=@giaBan,
+soLuong=@soLuong,
+thanhTien=@thanhTien,
+anh=@anh,
+size=@size
+where id_cthdb=@id_cthdb
+end 
+else if(@type='delete')
+begin
+Delete from CTHDB where id_cthdb=@id_cthdb
+end
+end
+
+
+--cart
+CREATE TABLE Cart(
+    id INT IDENTITY(1, 1) PRIMARY KEY,
+    customer_id INT CONSTRAINT fk_customer_cart FOREIGN KEY(customer_id) REFERENCES KhachHang(id) ON DELETE CASCADE,
+    product_id  INT CONSTRAINT fk_cart_product FOREIGN KEY(product_id) REFERENCES SanPham(id),
+   
+    quantity INT NOT NULL
+)
+
+Create TABLE Shipping_address (
+    id INT IDENTITY(1, 1) PRIMARY KEY,
+    name NVARCHAR(150) NOT NULL,
+    phone CHAR(10) NOT NULL,
+    address NVARCHAR(MAX) NOT NULL,
+)
+
+CREATE TABLE Orders(
+    id INT IDENTITY(1, 1) PRIMARY KEY,
+    customer_id INT CONSTRAINT fk_customer_oder FOREIGN KEY(customer_id) REFERENCES KhachHang(id),
+    address_id INT CONSTRAINT fk_address_oder FOREIGN KEY(address_id) REFERENCES Shipping_address(id) ON DELETE CASCADE,
+    created_at datetime NOT NULL,
+  
+    status TINYINT NOT NULL,
+)
+
+CREATE TABLE Detail_orders(
+    id INT IDENTITY(1, 1) PRIMARY KEY,
+    order_id INT CONSTRAINT fk_order_detail FOREIGN KEY(order_id) REFERENCES orders(id) ON DELETE CASCADE,
+    name NVARCHAR(250),
+    option_name VARCHAR(100),
+    image VARCHAR(200),
+    quantity INT NOT NULL,
+    price INT NOT NULL
+)
